@@ -1,0 +1,178 @@
+
+html {
+  scrollbar-width: none;
+  padding: 0;
+}
+
+body {
+  background: url(../imgs/canvas.jpg);
+  
+  scrollbar-width: none; 
+  overflow-y: scroll; 
+
+}
+
+
+
+
+.container{
+  background: rgb(75,29,91, .4);
+}
+
+.container > header h1,
+.container > header h2 {
+	color: #222;
+}
+
+.cs-text {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.cs-text span[class^="word"] {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+
+
+
+
+
+
+.cs-text span[class^="char"] {
+	width: 7vw;
+	height: 5vh;
+	display: inline-block;
+	background: #e4d095;
+  color: #2a1f1b;
+	border-radius: 4px;
+	font-size: 4.1vw;
+	font-weight: 700;
+/*	line-height: 100px;*/
+  margin: 1px 3px;
+  padding-top: 5px;
+	text-align: center;
+	cursor: default;
+/*	font-family: "Spinnaker", Arial, sans-serif;*/
+	font-family: 'Times New Roman', Times, serif;
+	text-shadow: 
+		1px 1px 1px rgba(255, 255, 255, 0.9), 
+		0 -1px 1px rgba(255,255,255,0.2);
+	text-transform: uppercase;
+	box-shadow: 
+		1px 7px 15px rgba(0,0,0,0.8),
+		inset 3px 0 2px rgba(255,255,255,0.4),
+		inset 0 3px 0px rgba(255,255,255,0.5),
+		inset -2px -3px 0px rgba(143,128,82,0.6);
+}
+
+.cs-text span[class^="char"]:nth-child(odd) {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.cs-text span[class^="char"]:nth-child(3n) {
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.cs-text > span:nth-child(5) span,
+h3.cs-text span[class^="char"]  {
+	color: #a62a19;
+}
+
+h3.cs-text span[class^="char"] {
+	font-size: 40px;
+	width: 50px;
+	height: 60px;
+	line-height: 60px;
+}
+
+
+#alphabet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: rgb(117, 106, 93, .25);
+ }
+
+.letters{
+  margin: 2px;
+}
+
+
+.alpha {
+	display: inline-block;
+	margin: 0 1px;
+}
+
+
+.alpha {
+	text-align: center;
+  margin-top: 20px;
+  color: red;  
+}
+
+.alpha span[class^="word"] {
+	display: inline-block;
+	margin: 0 0px;
+}
+
+
+
+
+
+
+
+.alpha span[class^="char"] {
+	width: 5vw;
+	height: 3.8vh;
+	display: inline-block;
+	background: #e4d095;
+	border-radius: 4px;
+	font-size: 3.4vw;
+	font-weight: 700;
+	margin: 1px 3px;
+	text-align: center;
+	cursor: default;
+  font-family: "Spinnaker", Arial, sans-serif;
+	text-shadow: 
+		1px 1px 1px rgba(255, 255, 255, 0.9), 
+		0 -1px 1px rgba(255,255,255,0.2);
+	text-transform: uppercase;
+	box-shadow: 
+		1px 7px 15px rgba(0,0,0,0.8),
+		inset 3px 0 2px rgba(255,255,255,0.4),
+		inset 0 3px 0px rgba(255,255,255,0.5),
+		inset -2px -3px 0px rgba(143,128,82,0.6);
+}
+
+.alpha2, .alpha3{
+  margin-top: 3px;
+}
+
+.scaffold {
+  width: 100vw;
+  height: 29vh;
+  border: gold 1px solid;
+/*  background: url(../images/hang.png);*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.already-clicked{
+  color: gray;
+}
+
+
+
+
