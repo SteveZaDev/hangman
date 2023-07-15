@@ -51,18 +51,21 @@ let cats = [
     "ZACHARY TAYLOR", "MILLARD FILLMORE", "FRANKLIN PIERCE", "JAMES BUCHANAN", "ABRAHAM LINCOLN", "ANDREW JOHNSON", "ULYSSES S GRANT", "RUTHERFORD B HAYES", "JAMES GARFIELD", "CHESTER A ARTHUR", "GROVER CLEVELAND", "BENJAMIN HARRISON", "WILLIAM MCKINLEY", "THEODORE ROOSEVELT", "WILLIAM HOWARD TAFT", "WOODROW WILSON", "WARREN G HARDING", "CALVIN COOLIDGE", "HERBERT HOOVER", "FRANKLIN D ROOSEVELT", "HARRY TRUMAN", "DWIGHT EISENHOWER", "JOHN F KENNEDY", "LYNDON JOHNSON", "RICHARD NIXON", "GERALD FORD", "JIMMY CARTER", "RONALD REAGAN", "GEORGE H W BUSH", "BILL CLINTON", "GEORGE W BUSH", "BARACK OBAMA", "DONALD TRUMP", "JOE BIDEN"]
   },  
   { 
-    cat: "Long Words",
+    cat: "Words",
     sel: false,
     parent: "",
     numOfItems: 0,
-    items: ["THISISALONGWORD"]
+    items: ["ABRUBPTLY", "ABSURD", "ABYSS", "AFFIX", "ASKEW", "AVENUE", "AWKWARD", "AXIOM", "AZURE", "BAGPIPES", "BANDWAGON", "BANJO", "BAYOU", "BEEKEEPER", "BIKINI", "BLITZ", "BLIZZARD"]
   },  
   { 
     cat: "Shakespeare",
     sel: false,
     parent: "",
     numOfItems: 0,
-    items: ["TO BE OR NOT TO BE", "FRIENDS ROMANS COUNTRYMEN", "I COME TO BURY CAESAR", "THE BRAVE TASTE OF DEATH BUT ONCE", "BUT CAESAR WAS AMBITIOUS", "AND BRUTUS IS AN HONORABLE MAN", "BUT IN OUR STARS", "THIS DAY I BREATHED FIRST", "WHERE I DID BEGIN THERE SHALL I END"]
+    items: ["TO BE OR NOT TO BE", "FRIENDS ROMANS COUNTRYMEN", "I COME TO BURY CAESAR", "THE BRAVE TASTE OF DEATH BUT ONCE", "BUT CAESAR WAS AMBITIOUS", "AND BRUTUS IS AN HONORABLE MAN", "BUT IN OUR SELVES", "THIS DAY I BREATHED FIRST", "WHERE I DID BEGIN THERE SHALL I END"],
+    play: ["Hamlet", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar"],
+    character: ["Hamlet", "Marc Antony", "Marc Antony", "Julius Caesar", "Marc Antony", "Marc Antony", "???????", "Gielgud", "Gielgud"],    
+    full: ["<strong>To be or not to be</strong>, that is the question. Whether tis", "<strong>Friends Romans Countrymen</strong>, I come to bury Caesar not to praise him", "Friends Romans Countrymen, <strong>I come to bury Caesar</strong> not to praise him", "Cowards die many times <strong>the brave taste of death but once</strong>", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "The fault lies not in our stars <strong>but in our selves</strong>", "<strong>This day I breathed first</strong>. Time has come round and where I did begin, there shall I end", "This day I breathed first. Time has come round and <strong>where I did begin, there shall I end</strong>"]
   }
 ]
 
@@ -75,6 +78,10 @@ const scaffoldEl = document.querySelector(".scaffold");
 
 let rCat = 0;
 let rItem = 0;
+
+let modal = ""
+let span = ""
+let answerEl = ""
 
 
 if (headerTextEl){
@@ -137,6 +144,9 @@ function initHangman(){
   
 $(document).ready(function() {
   $(".alpha").lettering('words').children('span').lettering()
+
+
+  initAnswersModal()
 });
 
 
@@ -224,7 +234,12 @@ function addKeyboardClicks(){
         console.log("You lose")  
         const audio = new Audio ("./auds/pop39222.mp3");
         audio.play(); 
+        answerEl.innerHTML =  `${cats[rCat].items[rItem]}`
+        if (cats[rCat].cat === "Shakespeare"){
+          answerEl.innerHTML =  `${cats[rCat].items[rItem]} From the play ${cats[rCat].play[rItem]} spoken by ${cats[rCat].character[rItem]} "${cats[rCat].full[rItem]}"`
         }
+        modal.style.display = "block";
+      }
         
       }
     
@@ -236,6 +251,11 @@ function addKeyboardClicks(){
         console.log("we have a winner")
         const audio = new Audio ("./auds/shortgood.mp3");
         audio.play(); 
+        answerEl.innerHTML = text;  
+        if (cats[rCat].cat === "Shakespeare"){
+          answerEl.innerHTML = `From the play ${cats[rCat].play[rItem]} spoken by ${cats[rCat].character[rItem]} "${cats[rCat].full[rItem]}"`
+        }
+        modal.style.display = "block";
       }
 
 
@@ -286,5 +306,24 @@ function findAllLetters(key){
     }
   }
   return found;
+}
 
+
+function initAnswersModal() {
+  modal = document.getElementById("answer-modal");
+  span = document.getElementById("close-answer");
+
+  answerEl = document.getElementById("view-answer")
+  
+  
+ 
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener("click", function () {
+  modal.classList.toggle("fade-out")
+  setTimeout(function(){
+    modal.style.display = "none";
+    modal.classList.toggle("fade-out")
+   }, 2500);
+
+  });
 }
