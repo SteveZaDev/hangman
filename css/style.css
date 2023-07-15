@@ -285,3 +285,19 @@ h3{
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: maroon;
 }
+
+
+.pop{
+  position: absolute;
+  color: gold; 
+  font-size: 2.25rem;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Smokum', cursive;
+  font-weight: 100;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin: 0;
+  padding: 0;
+}
