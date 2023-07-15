@@ -218,7 +218,7 @@ function addKeyboardClicks(){
         const audio = new Audio ("./auds/pop39222.mp3");
         audio.play();   
         picNum++;
-        let pic = `url(../imgs/hang${picNum}.png)`
+        let pic = `url(./imgs/hang${picNum}.png)`
         scaffoldEl.style.backgroundImage = pic;
         if (picNum === 8){  
         console.log("You lose")  
