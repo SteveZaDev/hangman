@@ -30,9 +30,7 @@ body {
 
 
 
-.container{
 
-}
 
 .container > header h1,
 .container > header h2 {
@@ -58,13 +56,13 @@ body {
 }
 
 .cs-text span[class^="char"] {
-	width: 7vw;
+	width: 8.6vw;
 	height: 5vh;
 	display: inline-block;
 	background: #e4d095;
   color: #2a1f1b;
 	border-radius: 4px;
-	font-size: 4.1vw;
+	font-size: 5.5vw;
 	font-weight: 700;
 /*	line-height: 100px;*/
   margin: 1px 3px;
@@ -150,12 +148,12 @@ h3.cs-text span[class^="char"] {
 
 
 .alpha span[class^="char"] {
-	width: 5vw;
+	width: 6.8vw;
 	height: 3.8vh;
 	display: inline-block;
 	background: #e4d095;
 	border-radius: 4px;
-	font-size: 3.4vw;
+	font-size: 4.4vw;
 	font-weight: 700;
 	margin: 1px 3px;
 	text-align: center;
@@ -184,6 +182,7 @@ h3.cs-text span[class^="char"] {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .already-clicked{
@@ -323,3 +322,7 @@ h3.cs-text span[class^="char"] {
 
 
 
+#view-answer{
+
+  text-align: center;
+}
