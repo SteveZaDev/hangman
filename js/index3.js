@@ -147,11 +147,14 @@ $(document).ready(function() {
 
 
   initAnswersModal()
+
+  scaffoldEl.addEventListener("click", function(){
+    window.location.href="index.html";
+  })
+
+
 });
-
-
-
-}
+} // inithangman
 
 
 btn.addEventListener("click", function () {

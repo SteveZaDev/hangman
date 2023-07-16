@@ -55,14 +55,17 @@ let cats = [
     sel: false,
     parent: "",
     numOfItems: 0,
-    items: ["ABRUPTLTHISISALONGWORD"]
+    items: ["ABRUBPTLY", "ABSURD", "ABYSS", "AFFIX", "ASKEW", "AVENUE", "AWKWARD", "AXIOM", "AZURE", "BAGPIPES", "BANDWAGON", "BANJO", "BAYOU", "BEEKEEPER", "BIKINI", "BLITZ", "BLIZZARD"]
   },  
   { 
     cat: "Shakespeare",
     sel: false,
     parent: "",
     numOfItems: 0,
-    items: ["TO BE OR NOT TO BE", "FRIENDS ROMANS COUNTRYMEN", "I COME TO BURY CAESAR", "THE BRAVE TASTE OF DEATH BUT ONCE", "BUT CAESAR WAS AMBITIOUS", "AND BRUTUS IS AN HONORABLE MAN", "BUT IN OUR STARS", "THIS DAY I BREATHED FIRST", "WHERE I DID BEGIN THERE SHALL I END"]
+    items: ["TO BE OR NOT TO BE", "FRIENDS ROMANS COUNTRYMEN", "I COME TO BURY CAESAR", "THE BRAVE TASTE OF DEATH BUT ONCE", "BUT CAESAR WAS AMBITIOUS", "AND BRUTUS IS AN HONORABLE MAN", "BUT IN OUR SELVES", "THIS DAY I BREATHED FIRST", "WHERE I DID BEGIN THERE SHALL I END"],
+    play: ["Hamlet", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar"],
+    character: ["Hamlet", "Marc Antony", "Marc Antony", "Julius Caesar", "Marc Antony", "Marc Antony", "???????", "Gielgud", "Gielgud"],    
+    full: ["<strong>To be or not to be</strong>, that is the question. Whether tis", "<strong>Friends Romans Countrymen</strong>, I come to bury Caesar not to praise him", "Friends Romans Countrymen, <strong>I come to bury Caesar</strong> not to praise him", "Cowards die many times <strong>the brave taste of death but once</strong>", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "The fault lies not in our stars <strong>but in our selves</strong>", "<strong>This day I breathed first</strong>. Time has come round and where I did begin, there shall I end", "This day I breathed first. Time has come round and <strong>where I did begin, there shall I end</strong>"]
   }
 ]
 
@@ -96,11 +99,15 @@ const totShakesEl = document.getElementById("tot-shakes")
 const totGeoEl = document.getElementById("tot-geos")
 const totRandomEl = document.getElementById("tot-all")
 
+let modal = ""
+let span = ""
+let answerEl = ""
+
 let addListeners = true;
 
 
   setCatInfo();
-
+  initOptionsModal();
 
 
 csTextEl.addEventListener("click", function (e) {
@@ -194,6 +201,7 @@ function optHandler(){
   catEl.removeEventListener("click", catHandler)
   playEl.removeEventListener("click", playHandler)
   optEl.removeEventListener("click", optHandler)
+  modal.style.display = "block";
 }
 
 function setCatInfo(){
@@ -234,4 +242,24 @@ function setCatInfo(){
   }
   totRandomEl.innerText = "Elev  " + totItems;
 
+}
+
+
+function initOptionsModal(){
+  modal = document.getElementById("options-modal");
+  span = document.getElementById("close-options");
+
+  optionsEl = document.getElementById("view-options")
+  
+  
+ 
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener("click", function () {
+  modal.classList.toggle("fade-out")
+  setTimeout(function(){
+    modal.style.display = "none";
+    modal.classList.toggle("fade-out")
+   }, 2500);
+
+  });
 }
