@@ -55,17 +55,17 @@ let cats = [
     sel: false,
     parent: "",
     numOfItems: 0,
-    items: ["ABRUBPTLY", "ABSURD", "ABYSS", "AFFIX", "ASKEW", "AVENUE", "AWKWARD", "AXIOM", "AZURE", "BAGPIPES", "BANDWAGON", "BANJO", "BAYOU", "BEEKEEPER", "BIKINI", "BLITZ", "BLIZZARD"]
+    items: ["ABRUBPTLY", "ABSURD", "ABYSS", "AFFIX", "ASKEW", "AVENUE", "AWKWARD", "AXIOM", "AZURE", "BAGPIPES", "BANDWAGON", "BANJO", "BAYOU", "BEEKEEPER", "BIKINI", "BLITZ", "BLIZZARD", "BOGGLE", "BOOKWORM", "BOXCAR", "BOXFUL", "BUCKAROO", "BUFFALO", "BUFFOON", "BUXOM", "BUZZARD", "BUZZING", "BUSSWORDS", "CALIPH", "COBWEB", "COCKINESS", "CROQUET", "CRYPT", "CYCLE", "DAIQUIRI", "DISAVOW", "DIZZYING", "DUPLEX", "DWARVES", "EMBEZZLE", "EQUIP", "ESPIONAGE", "EXODUS", "FAKING", "FISHHOK", "FIXABLE", "FJORD", "FLAPJACK", "FLOPPING", "FLUFFINESS", "FLYBY", "FRAZZLED", "FRIZZLED", "FUCHSIA", "FUNNY", "GABBY", "GALAXY", "GALVANIZE", "GAZEBO", "GIZMO", "GLOWWORM", "GLYPH", "GNARLY", "GNOSTIC", "GOSSIP", "GROGGINESS", "HAIKU", "HAPHAZARD", "HYPHEN", "ICEBOX", "INJURY", "IVORY", "JACKPOT", "JAUNDICE", "JAWBREAKER", "JAYWALK", "JAZZIEST", "JAZZY", "JELLY", "JIGSAW", "JINX", "JIUJITSU", "JOCKEY", "JOGGING", "JOKING", "JOVIAL", "JOYFUL", "JUICY", "JUKEBOX", "JUMBO", "KAYAK", "KAZOO", "KEYHOLE", "KHAKI", "KILOBYTE", "KIOSK", "KITSCH", "KLUTZ", "KNAPSACK", "LARYNX", "LENGTHS", "LUCKY", "LYMPH", "MARQUIS", "MATRIX", "MEGAHERTZ", "MICROWAVE", "MNEMONIC", "MYSTIFY", "NIGHTCLUB", "NOWADAYS", "NUMBSKULL", "NYMPH", "ONYX", "OVARY", "OXIDIZE", "OXYGEN", "PAJAMA", "PEEKABOO", "PHLEGM", "PIXEL", "PIZAZZ", "PNEUMONIA", "POLKA", "PSYCHE", "PUPPY", "PUZZLING", "QUARTZ", "QUEUE", "QUIPS", "QUIXOTIC", "QUIZ", "QUIZZES", "QUORUM", "RAZZMATAZZ", "RHUBARB", "RHYTHM", "RICKSHAW", "SCHNAPPS", "SCRATCH", "SNAZZY", "SPHINX", "SPRITZ", "SQUAWK", "STAFF", "STRENGTH", "STRENGTHS", "STRETCH", "STRONGHOLD", "STYMIED", "SUBWAY", "SWIVEL", "SYNDROME", "TOPAZ", "TRANSCRIPT", "TRANSGRESS", "TRANSPLANT", "TWELFTH", "UNKNOWN", "UNWORTHY", "UNZIP", "UPTOWN", "VAPORIZE", "VIXEN", "VODKA", "VOODOO", "VORTEX", "VOYEURISM", "WALKWAY", "WALTZ", "WAVE", "WAVY", "WAXY", "WELLSPRING", "WHEEZY", "WHISKEY", "WHIZZING", "WHOMEVER", "WIMPY", "WITCHCRAFT", "WIZARD", "WOOZY", "WRISTWATCH", "XYLOPHONE", "YACHTSMAN", "YIPPEE", "YOKED", "YOUTHFUL", "YUMMY", "ZEPHYR", "ZIGZAGGING", "ZILCH", "ZIPPER", "ZODIAC", "ZOMBIE"]
   },  
   { 
     cat: "Shakespeare",
     sel: false,
     parent: "",
     numOfItems: 0,
-    items: ["TO BE OR NOT TO BE", "FRIENDS ROMANS COUNTRYMEN", "I COME TO BURY CAESAR", "THE BRAVE TASTE OF DEATH BUT ONCE", "BUT CAESAR WAS AMBITIOUS", "AND BRUTUS IS AN HONORABLE MAN", "BUT IN OUR SELVES", "THIS DAY I BREATHED FIRST", "WHERE I DID BEGIN THERE SHALL I END"],
+    items: ["TO BE OR NOT TO BE", "FRIENDS ROMANS COUNTRYMEN", "I COME TO BURY CAESAR", "THE VALIANT NEVER TASTE OF DEATH BUT ONCE", "BUT CAESAR WAS AMBITIOUS", "AND BRUTUS IS AN HONORABLE MAN", "BUT IN OURSELVES", "THIS DAY I BREATHED FIRST", "WHERE I DID BEGIN THERE SHALL I END", "HE DOTH BESTRIDE THE NARROW WORLD LIKE A COLOSSUS", "BEWARE THE IDES OF MARCH", "THE FAULT DEAR BRUTUS IS NOT IN OUR STARS", "CASSIUS HAS A LEAN AND HUNGRY LOOK", "SUCH MEN ARE DANGEROUS", "IT WAS GREEK TO ME", "COWARDS DIE MANY TIMES", "ET TU BRUTE", "CRY HAVOC", "LET SLIP THE DOGS OF WAR", "NOT THAT I LOVES CAESAR LESS", "BUT THAT I LOVED ROME MORE", "THIS WAS THE MOST UNKINDEST CUT OF ALL", "THE EVIL THAT MEN DO", "THERE IS A TIDE IN THE AFFAIRS OF MEN"],
     play: ["Hamlet", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar", "Julius Caesar"],
-    character: ["Hamlet", "Marc Antony", "Marc Antony", "Julius Caesar", "Marc Antony", "Marc Antony", "???????", "Gielgud", "Gielgud"],    
-    full: ["<strong>To be or not to be</strong>, that is the question. Whether tis", "<strong>Friends Romans Countrymen</strong>, I come to bury Caesar not to praise him", "Friends Romans Countrymen, <strong>I come to bury Caesar</strong> not to praise him", "Cowards die many times <strong>the brave taste of death but once</strong>", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "The fault lies not in our stars <strong>but in our selves</strong>", "<strong>This day I breathed first</strong>. Time has come round and where I did begin, there shall I end", "This day I breathed first. Time has come round and <strong>where I did begin, there shall I end</strong>"]
+    character: ["Hamlet", "Marc Antony", "Marc Antony", "Julius Caesar", "Marc Antony", "Marc Antony", "Cassius", "Cassius", "Cassius", "HE DOTH BESTRIDE THE NARROW WORLD LIKE A COLOSSUS", "BEWARE THE IDES OF MARCH", "THE FAULT DEAR BRUTUS IS NOT IN OUR STARS", "CASSIUS HAS A LEAN AND HUNGRY LOOK", "SUCH MEN ARE DANGEROUS", "IT WAS GREEK TO ME", "COWARDS DIE MANY TIMES", "ET TU BRUTE", "CRY HAVOC", "LET SLIP THE DOGS OF WAR", "NOT THAT I LOVES CAESAR LESS", "BUT THAT I LOVED ROME MORE", "THIS WAS THE MOST UNKINDEST CUT OF ALL", "THE EVIL THAT MEN DO", "THERE IS A TIDE IN THE AFFAIRS OF MEN"],    
+    full: ["<strong>To be or not to be</strong>, that is the question. Whether tis", "<strong>Friends Romans Countrymen</strong>, I come to bury Caesar not to praise him", "Friends Romans Countrymen, <strong>I come to bury Caesar</strong> not to praise him", "Cowards die many times <strong>the brave taste of death but once</strong>", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "Friends Romans Countrymen, I come to bury Caesar not to praise him", "The fault lies not in our stars <strong>but in our selves</strong>", "<strong>This day I breathed first</strong>. Time has come round and where I did begin, there shall I end", "This day I breathed first. Time has come round and <strong>where I did begin, there shall I end</strong>", "HE DOTH BESTRIDE THE NARROW WORLD LIKE A COLOSSUS", "BEWARE THE IDES OF MARCH", "THE FAULT DEAR BRUTUS IS NOT IN OUR STARS", "CASSIUS HAS A LEAN AND HUNGRY LOOK", "SUCH MEN ARE DANGEROUS", "IT WAS GREEK TO ME", "COWARDS DIE MANY TIMES", "ET TU BRUTE", "CRY HAVOC", "LET SLIP THE DOGS OF WAR", "NOT THAT I LOVES CAESAR LESS", "BUT THAT I LOVED ROME MORE", "THIS WAS THE MOST UNKINDEST CUT OF ALL", "THE EVIL THAT MEN DO", "THERE IS A TIDE IN THE AFFAIRS OF MEN"]
   }
 ]
 
@@ -234,15 +234,16 @@ function addKeyboardClicks(){
         let pic = `url(./imgs/hang${picNum}.png)`
         scaffoldEl.style.backgroundImage = pic;
         if (picNum === 8){  
-        console.log("You lose")  
-        const audio = new Audio ("./auds/pop39222.mp3");
-        audio.play(); 
-        answerEl.innerHTML =  `${cats[rCat].items[rItem]}`
-        if (cats[rCat].cat === "Shakespeare"){
-          answerEl.innerHTML =  `${cats[rCat].items[rItem]} From the play ${cats[rCat].play[rItem]} spoken by ${cats[rCat].character[rItem]} "${cats[rCat].full[rItem]}"`
-        }
+          console.log("You lose")  
+          const audio = new Audio ("./auds/pop39222.mp3");
+          audio.play(); 
+          answerEl.innerHTML =  `${cats[rCat].items[rItem]}`
+          if (cats[rCat].cat === "Shakespeare"){
+            answerEl.innerHTML =  `${cats[rCat].items[rItem]} From the play ${cats[rCat].play[rItem]} spoken by ${cats[rCat].character[rItem]} 
+            "${cats[rCat].full[rItem]}"`
+          }
         modal.style.display = "block";
-      }
+        } // picnum === 8
         
       }
     
@@ -256,7 +257,9 @@ function addKeyboardClicks(){
         audio.play(); 
         answerEl.innerHTML = text;  
         if (cats[rCat].cat === "Shakespeare"){
-          answerEl.innerHTML = `From the play ${cats[rCat].play[rItem]} spoken by ${cats[rCat].character[rItem]} "${cats[rCat].full[rItem]}"`
+          answerEl.innerHTML = `From the play ${cats[rCat].play[rItem]} spoken by ${cats[rCat].character[rItem]}
+              
+          "${cats[rCat].full[rItem]}"`
         }
         modal.style.display = "block";
       }
