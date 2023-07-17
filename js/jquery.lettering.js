@@ -11,45 +11,34 @@
 * Date: Mon Sep 20 17:14:00 2010 -0600
 */
 (function($){
-  console.log("reached function")
-	function injector(t, splitter, klass, after) {
-    console.log("t in function is = " + t.text())
+ 	function injector(t, splitter, klass, after) {
     var a = t.text().split(splitter), inject = '';
 
-    console.log("a in function is = " + a)
-    console.log("splitter in function is = " + splitter)
-    
-		if (a.length) {
+ 		if (a.length) {
 			$(a).each(function(i, item) {
-        console.log("for each i = " + i + "  item = " + item)
         inject += '<span class="'+klass+(i+1)+'">'+item+'</span>'+after;
-        console.log("inject = " + inject)
-			});	
+ 			});	
 			t.empty().append(inject);
 		}
 	}
 	
 	var methods = {
 		init : function() {
-      console.log("reached init")
-			return this.each(function() {
+ 			return this.each(function() {
 				injector($(this), '', 'char', '');
 			});
 
 		},
 
 		words : function() {
-      console.log("reached words")
-			return this.each(function() {
+ 			return this.each(function() {
         injector($(this), ' ', 'word', ' ');
-        console.log("reached words function")
-			});
+ 			});
 
 		},
 		
 		lines : function() {
-      console.log("lines")
-			return this.each(function() {
+ 			return this.each(function() {
 				var r = "eefec303079ad17405c889e092e105b0";
 				// Because it's hard to split a <br/> tag consistently across browsers,
 				// (*ahem* IE *ahem*), we replaces all <br/> instances with an md5 hash 
@@ -62,7 +51,6 @@
 	};
 
 	$.fn.lettering = function( method ) {
-    console.log("reached lettering")
 		// Method calling logic
 		if ( method && methods[method] ) {
 			return methods[ method ].apply( this, [].slice.call( arguments, 1 ));
