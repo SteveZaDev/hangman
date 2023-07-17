@@ -36,7 +36,8 @@ body {
 
 .cs-text {
 	text-align: center;
-	margin-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .cs-text span[class^="word"] {
@@ -92,10 +93,11 @@ body {
 	transform: rotate(-3deg);
 }
 
+/*
 .cs-text > span:nth-child(5) span,
 h3.cs-text span[class^="char"]  {
 	color: #a62a19;
-}
+}*/
 
 h3.cs-text span[class^="char"] {
 	font-size: 40px;
