@@ -8,7 +8,7 @@
   --keyboard-letter-color: rgb(215, 218, 220);
   --deepLightPurple: rgb(100, 11, 129);
   --modalHeaderColor: hsl(290, 50%, 50%); 
-  --modalHeaderBackground: rgb(10, 72, 5);
+  --modalHeaderBackground: rgb(129, 99, 16);
   font-family: 'Times New Roman', Times, serif;
   
 }
@@ -21,16 +21,13 @@ html {
 
 body {
   background: url(../imgs/canvas.jpg);
-  
   scrollbar-width: none; 
   overflow-y: scroll; 
-
 }
 
-
-
-
-
+.main{
+  max-width: 1000px;
+}
 
 .container > header h1,
 .container > header h2 {
@@ -46,9 +43,6 @@ body {
 	display: inline-block;
 	margin: 0 15px;
 }
-
-
-
 
 
 #test:hover{
@@ -115,12 +109,13 @@ h3.cs-text span[class^="char"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
   margin-bottom: 10px;
-  background-color: rgb(117, 106, 93, .25);
+  background-color: rgba(108, 16, 124, 0.05);
  }
 
 .letters{
-  margin: 2px;
+  margin: 1px;
 }
 
 
@@ -155,7 +150,7 @@ h3.cs-text span[class^="char"] {
 	border-radius: 4px;
 	font-size: 4.4vw;
 	font-weight: 700;
-	margin: 1px 3px;
+	margin: 1px 1px;
 	text-align: center;
 	cursor: default;
   font-family: "Spinnaker", Arial, sans-serif;
@@ -175,7 +170,7 @@ h3.cs-text span[class^="char"] {
 }
 
 .scaffold {
-  width: 100vw;
+  width: 100%;
   height: 29vh;
   border: gold 1px solid;
 /*  background: url(../images/hang.png);*/
@@ -325,4 +320,38 @@ h3.cs-text span[class^="char"] {
 #view-answer{
 
   text-align: center;
+}
+
+
+
+
+
+@media (min-width: 750px){
+  .alpha:hover {
+    
+  }
+
+  .alpha span[class^="char"] {
+    width: 3.8vw;
+    height: 3.8vh;
+    border-radius: 4px;
+    font-size: 1.9vw;
+
+  }
+
+
+  .alpha span[class^="char"]:hover {
+    cursor: pointer;
+  }
+
+  .cs-text span[class^="char"] {
+    width: 3.6vw;
+    height: 5.5vh;
+    border-radius: 4px;
+    font-size: 2.0vw;
+
+  }
+
+
+
 }
